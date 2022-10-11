@@ -1,21 +1,22 @@
 import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home/Home';
+import Shorts from './pages/Shorts';
+import Home from './pages/Home';
+import Short from './pages/Short';
+import Edit from './pages/Edit';
+import 'antd/dist/antd.css';
 import './App.css';
+
 
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        {/* <Route path="/my-mocks" element={<Mocks />} /> */}
-        {/* <Route path="/mock/:id" element={<EditMock />} /> */}
-        {/* <Route path="/home" element={<Home />} /> */}
-        {/* <Route path='/mock/new' element={<NewMock />} /> */}
-        {/* <Route path='/mock/delete/:id' element={<DeleteMock />} /> */}
-      </Routes>
-    </>
-
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path="/shorts" element={<Shorts />} />
+      <Route path="/:URL" element={<Short />} />
+      <Route path="/edit/:id" element={<Edit />} />
+      <Route path='/delete/:id' element={<h1>delete</h1>} />
+    </Routes>
   );
 }
 
