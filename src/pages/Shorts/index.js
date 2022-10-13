@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Table, Space, Button, message } from "antd";
 import { EditOutlined, DeleteOutlined } from '@ant-design/icons';
 

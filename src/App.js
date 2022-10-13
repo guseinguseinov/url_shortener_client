@@ -5,6 +5,7 @@ import Short from './pages/Short';
 import Edit from './pages/Edit';
 import 'antd/dist/antd.css';
 import './App.css';
+import Delete from './pages/Delete';
 
 
 
@@ -15,7 +16,7 @@ function App() {
       <Route path="/shorts" element={<Shorts />} />
       <Route path="/:URL" element={<Short />} />
       <Route path="/edit/:id" element={<Edit />} />
-      <Route path='/delete/:id' element={<h1>delete</h1>} />
+      <Route path='/delete/:id' element={<Delete />} />
     </Routes>
   );
 }
