@@ -21,6 +21,12 @@ const Short = () => {
         getRedirectURL();
 
     }, []);
+
+    return (
+        <>
+            <h1>Redirecting...</h1>
+        </>
+    );
 }
 
 export default Short;
