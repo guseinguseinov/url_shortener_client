@@ -11,7 +11,7 @@ const Short = () => {
         async function getRedirectURL() {
             try {
                 const { data } = await axios.get(`urls/short/${params.URL}`);
-                window.location.href = data.data.targetURL
+                window.location.replace(data.data.targetURL);
             } catch (err) {
                 message.error(err.response.data.message);
                 navigate("/");
